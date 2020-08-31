@@ -128,16 +128,35 @@ class Game {
             //title.position(displayWidth/2-80, 0);
 
             this.rank.html("Your rank: " + player.rank);
-            //this.rank.html("Your rank: " + player.rank);
             this.rank.position(displayWidth/2-70, displayHeight/4);
 
-            //this.comment.html("very good");
-            //this.comment.position(displayWidth/2-100, displayHeight/4);
+            if(player.rank === 1) {
 
-            //if(player.rank === 1 || player.rank === 2 || player.rank === 3 ) {
+                this.comment.html("wow!... you are the winner");
+                this.comment.position(displayWidth/2-100, displayHeight/3);
 
-              //  text("good",200, 200);
-            //}
+            }
+            
+            if(player.rank === 2) {
+
+                this.comment.html("very good!... you are the runner up");
+                this.comment.position(displayWidth/2-100, displayHeight/3);
+
+            }
+            
+            if(player.rank === 3) {
+
+                this.comment.html("nice!... you have come third");
+                this.comment.position(displayWidth/2-100, displayHeight/3);
+
+            }
+            
+            if(player.rank === 4) {
+
+                this.comment.html("better luck next time");
+                this.comment.position(displayWidth/2-100, displayHeight/3);
+
+            }
         }
     }
 }
