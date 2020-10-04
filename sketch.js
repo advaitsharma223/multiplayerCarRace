@@ -11,12 +11,12 @@ var car1_image, car2_image, car3_image, car4_image;
 
 function preload() {
 
-    car1_image = loadImage("../images/car1.png");
-    car2_image = loadImage("../images/car2.png");
-    car3_image = loadImage("../images/car3.png");
-    car4_image = loadImage("../images/car4.png");
+    car1_image = loadImage("/multiplayerCarRace/images/car1.png");
+    car2_image = loadImage("/multiplayerCarRace/images/car1.png");
+    car3_image = loadImage("/multiplayerCarRace/images/car1.png");
+    car4_image = loadImage("/multiplayerCarRace/images/car1.png");
 
-    track = loadImage("../images/track.jpg");
+    track = loadImage("/Advaitmulticarracing/images/track.jpg");
 }
 
 function setup() {
